@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Administración de empleados y vacaciones</title>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        background-color: lightyellow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+  
+      h1 {
+        color: #800000;
+      }
+  
+      .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+  
+      .logo {
+        max-width: 400px;
+        max-height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo-container">
+      <img class="logo" src="https://chcoronel.com/wp-content/uploads/2023/05/logo.png" alt="Logo">
+    </div>
+
+  <h1>Administración de empleados</h1>
+  <label for="nombre">Nombre del empleado:</label>
+  <input type="text" id="nombre" />
+  <label for="codigo">Código de empleado:</label>
+  <input type="text" id="codigo" />
+  <label for="fechaIngreso">Fecha de ingreso:</label>
+  <input type="date" id="fechaIngreso" />
+  <button onclick="agregarEmpleado()">Agregar empleado</button>
+
+  <h2>Lista de empleados</h2>
+  <ul id="listaEmpleados"></ul>
+
+
+  <h1>Vacaciones</h1>
+  <label for="buscarCodigo">Buscar por código de empleado:</label>
+  <input type="text" id="buscarCodigo" />
+  <button onclick="buscarVacaciones()">Buscar</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    // Coloca aquí el código JavaScript proporcionado anteriormente
+
+    // ...
+  </script>
+  <script src="rh.js"></script>
+
+</body>
+</html>
